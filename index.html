@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./src/images/pokebola.png">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="./src/js/script.js" type="module" defer></script>
+</head>
+<body>
+    <div class="page">
+    <main>
+        <section class="column-1">
+            <div class="pokemon__nameAndID">
+                <h4></h4>
+                <h1></h1>
+            </div>
+
+            <div class="pokemon_infosWrapper">
+                <div class="pokemon__heightAndWeight">
+                    <p>Height:</p><span></span> m
+                </div>
+                <div class="pokemon__heightAndWeight">
+                    <p>Weight:</p><span></span> kg
+                </div>
+            </div>
+        </section>
+
+        <section class="column-2">
+
+            <div class="pokemon-wrapper">
+                <div class="pokemon__image">
+                    <img src="#" alt="Imagem do pokemon">
+                </div>
+
+                <div class="pokemon__types">
+                    <img src="#" alt="Primeiro tipo do pokemon">
+                    <img src="#" alt="Segundo tipo do pokemon">
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section class="column-3">
+            <div class="pokemon__stats">
+                <h3>Base stats:</h3>
+                <ul>
+                    <li class="box__stats">
+                        <span class="stats">HP:</span>
+                        <span class="hp-stats"></span>
+                    </li>
+
+                    <li class="box__stats">
+                        <span class="stats">Attack:</span>
+                        <span class="attack-stats"></span>
+                    </li>
+
+                    <li class="box__stats">
+                        <span class="stats">Defense:</span>
+                        <span class="defense-stats"></span>
+                    </li>
+
+                    <li class="box__stats">
+                        <span class="stats">Sp. Atk:</span>
+                        <span class="spAtk-stats"></span>
+                    </li>
+
+                    <li class="box__stats">
+                        <span class="stats">Sp. Def:</span>
+                        <span class="spDef-stats"></span>
+                    </li>
+
+                    <li class="box__stats">
+                        <span class="stats">Speed:</span>
+                        <span class="speed-stats"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pokemon__abilities">
+                <h3>Abilities:</h3>
+                
+                <ul>
+                    <li><span class="abilities"></span></li>
+                    <li><span class="abilities"></span></li>
+                    <li><span class="abilities HAabilities"></span></li>
+                </ul>
+
+            </div>
+            
+        </section>
+
+        <section class="column-4">
+
+            <button class="btn-prev">
+                <svg width="452" height="258" viewBox="0 0 452 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M225.923 257.706C217.825 257.706 209.728 254.614 203.554 248.443L9.27023 54.157C-3.08877 41.798 -3.08877 21.76 9.27023 9.406C21.6242 -2.948 41.6582 -2.948 54.0182 9.406L225.923 181.321L397.829 9.41201C410.188 -2.94199 430.22 -2.94199 442.573 9.41201C454.938 21.766 454.938 41.804 442.573 54.163L248.292 248.449C242.115 254.621 234.018 257.706 225.923 257.706Z" fill="white"/>
+                    </svg>                    
+            </button>
+
+                <form class="form">
+
+                <input
+                type="search"
+                class="input__search"
+                placeholder="Name or Number"
+                required
+                />
+                </form>
+
+                <button class="btn-next">
+                    <svg width="452" height="258" viewBox="0 0 452 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M225.923 257.706C217.825 257.706 209.728 254.614 203.554 248.443L9.27023 54.157C-3.08877 41.798 -3.08877 21.76 9.27023 9.406C21.6242 -2.948 41.6582 -2.948 54.0182 9.406L225.923 181.321L397.829 9.41201C410.188 -2.94199 430.22 -2.94199 442.573 9.41201C454.938 21.766 454.938 41.804 442.573 54.163L248.292 248.449C242.115 254.621 234.018 257.706 225.923 257.706Z" fill="white"/>
+                        </svg>                        
+                </button>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

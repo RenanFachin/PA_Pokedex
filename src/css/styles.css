@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --ff-allPage: 'Nunito', sans-serif;
+
+    --fc-page: #ffffff;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--ff-allPage);
+    color: var(--fc-page);
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../../src/images/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.page{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem 10rem 4rem;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "A A"
+    "B C"
+    "B C"
+    "D D";
+    grid-template-columns: 50% 50%;
+
+
+    background: rgba(255,255,255,0.1);
+    border-radius: 3rem;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+}
+
+.column-1{
+    grid-area: A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.column-1 .pokemon__nameAndID{
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+}
+
+.column-1 .pokemon__nameAndID h4{
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.column-1 .pokemon__nameAndID h1{
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+}
+
+.column-1 .pokemon__abilities{
+    padding: 2rem;
+    margin-top: 30rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.column-1 .pokemon__abilities p{
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+.column-1 .pokemon__abilities span{
+    font-size: 1.8rem;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.pokemon_infosWrapper{
+    padding: 3rem 5rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.column-1 .pokemon__heightAndWeight p{
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.column-1 .pokemon__heightAndWeight span{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.column-2{
+    grid-area: B;
+    height: 60vh;
+}
+
+.pokemon-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.column-2 .pokemon__image img{
+    max-width: 45rem;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,.5));
+}
+
+.pokemon__types{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 45rem;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,.5));
+}
+
+.pokemon__types img{
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    padding: 0.8rem;
+    background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.column-3{
+    grid-area: C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    height: 60vh;
+}
+
+.column-3 div:nth-child(1){
+    border-right: 3px solid rgba(255,255,255,0.35);
+    border-radius: 2px;
+}
+
+.column-3 div{
+    min-width: 22rem;
+    min-height: 35rem;
+}
+
+.column-3 h3{
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-shadow: 0 15px 30px rgb(0, 0, 0, 0.15);
+    margin-bottom: 3rem;
+}
+
+.column-3 ul{
+    list-style: none;
+}
+
+.column-3 ul li .stats,
+.column-3 ul li .hp-stats,
+.column-3 ul li .attack-stats,
+.column-3 ul li .defense-stats,
+.column-3 ul li .spAtk-stats,
+.column-3 ul li .spDef-stats,
+.column-3 ul li .speed-stats
+{
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.7);
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+    box-shadow: 0 20px 25px -10px rgb(0, 0, 0, 0, 0.2);
+    margin-bottom: 0.8em;
+}
+
+.column-3 ul li .abilities{
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.7);
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+    box-shadow: 0 20px 25px -10px rgb(0, 0, 0, 0, 0.2);
+    margin-bottom: 0.8em;
+}
+
+.column-3 ul li .HAabilities{
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgba(211, 4, 4, 0.3);
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+    box-shadow: 0 20px 25px -10px rgb(0, 0, 0, 0, 0.2);
+    margin-bottom: 0.8em;
+    cursor: pointer;
+}
+
+.column-3 ul li .HAabilities:hover{
+    color: red;
+}
+
+.column-3 .pokemon__heightAndWeight{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.column-4{
+    grid-area: D;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form{
+    width: 45rem;
+    padding: 1rem;
+}
+
+.input__search{
+    height: 4.8rem;
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid rgb(224, 222, 222);
+    border-radius: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 16px);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button{
+    height: 4.8rem;
+    width: 6rem;
+    background: transparent;
+    border: none;
+    color: #3a444d;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.column-4 button.btn-prev svg{
+    rotate: calc(90deg);
+    height: 4rem;
+    width: 4rem;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,.5));
+}
+
+.column-4 button.btn-next svg{
+    rotate: calc(270deg);
+    height: 4rem;
+    width: 4rem;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,.5));
+}
+
+.column-4 button.btn-next path{
+    height: 4rem;
+    width: 4rem;
+}
+
+.btn-next:active path{
+    fill: #3a444d;
+}
+
+.btn-prev:active path{
+    fill: #3a444d;
+}
+
+.hide{
+    display: none;
+    opacity: 0;
+}
