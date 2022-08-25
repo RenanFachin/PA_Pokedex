@@ -1,8 +1,11 @@
-<img src="https://i.imgur.com/1t5fgJr.jpg">
+<img src="https://i.imgur.com/jOEhZlp.gif">
 
 
 # Pokedex
-Desenvolvimento de uma página que se conecta com uma API externa do pokemon (PokeApi). Com ela, será possível fazer pesquisar por id ou nomes dos pokemons e será retornado uma série de dados diversos.O intuito deste projeto é auxiliar os jogadores dos jogos da fraquia a ter uma acesso mais visual à alguns dados e aprimorar uma série de habildidades de desenvolvimento web.
+Desenvolvimento de uma página que se conecta com uma API externa do pokemon (PokeApi). Com ela, será possível fazer pesquisar por id ou nomes dos pokemons e será retornado uma série de dados diversos.
+<br>
+O intuito deste projeto é auxiliar os jogadores dos jogos da fraquia a ter uma acesso mais visual à alguns dados e aprimorar uma série de habildidades de desenvolvimento web.
+<br>
 Este projeto está disponível tanto para desktop quanto para dispositivos móveis e estará em constante aprimoramento.
 
 ## 🎯 Funcionalidades
